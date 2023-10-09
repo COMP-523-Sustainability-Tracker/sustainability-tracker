@@ -1,3 +1,4 @@
+<Frame defaultPage="home/home-page" />
 <nsDrawer:RadSideDrawer
   id="sideDrawer"
   xmlns:nsDrawer="nativescript-ui-sidedrawer"
@@ -19,12 +20,12 @@
             <ScrollView row="1">
                 <StackLayout>
                     <GridLayout
-            columns="auto, *"
-            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Home' ? ' -selected': '') }}"
-            route="home/home-page"
-            title="Home"
-            tap="onNavigationItemTap"
-          >
+                        columns="auto, *"
+                        class="{{ 'nt-drawer__list-item' + (selectedPage === 'Home' ? ' -selected': '') }}"
+                        route="home/home-page"
+                        title="Home"
+                        tap="onNavigationItemTap"
+                     >
                         <Label row="0" col="0" text="&#xf015;" class="nt-icon fas" />
                         <Label row="0" col="1" text="Home" class="p-r-10" />
                     </GridLayout>

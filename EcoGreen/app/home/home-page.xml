@@ -10,8 +10,20 @@
         </GridLayout>
     </ActionBar>
 
-    <GridLayout class="page__content">
-        <Label class="page__content-icon fas" text="&#xf015;"></Label>
-        <Label class="page__content-placeholder" text="<!-- Page content goes here -->"></Label>
-    </GridLayout>
+    <StackLayout>
+		<!-- >> sample-ui-textfield-html -->
+		<TextField loaded="onTextFieldLoaded" hint="Enter Username" text="{{viewDate}}" secure="false" keyboardType="datetime" returnKeyType="done" autocorrect="false" maxLength="15" />
+		<!-- << sample-ui-textfield-html -->
+        <TextField loaded="onTextFieldLoaded" hint="Enter Password" text="{{viewDate}}" secure="false" keyboardType="datetime" returnKeyType="done" autocorrect="false" maxLength="10" />
+
+	</StackLayout>
+
+    
+
+
+
 </Page>
+
+
+
+
