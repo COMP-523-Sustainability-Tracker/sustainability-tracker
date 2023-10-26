@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="My App" icon="" />
+
+    <StackLayout class="mainpage">
+        <Button text = "Login" tap = "login"> </Button>
+        <Button text = "Register" tap = "register"> </Button>
+        <Button text = "Dashboard" tap = "dashboard"> </Button>
+    </StackLayout>
+
+</Page>

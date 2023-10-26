@@ -1,0 +1,47 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Register For New Account" icon="" />
+
+     <FlexboxLayout class = "page"> 
+        <StackLayout class="form">
+
+            <Label class = "header" text = "Register" > </Label> 
+
+            <StackLayout class = "input-field"> 
+                <Label class = "input" text = "First Name"> </Label> 
+                <TextField class = "input" hint = "Enter First Name" text = "{{ firstName }}"> </TextField>
+                <StackLayout class = "hr-light"> </StackLayout>
+            </StackLayout>
+
+            <StackLayout class = "input-field">
+                <Label class = "input" text = "Last Name"> </Label> 
+                <TextField class = "input" hint = "Enter Last Name" text = "{{ lastName }}"> </TextField>
+                <StackLayout class = "hr-light"> </StackLayout>
+            </StackLayout>
+
+            <StackLayout class = "input-field">
+                <Label class = "input" text = "Username"> </Label> 
+                <TextField class = "input" hint = "Enter Username" text = "{{ username }}"> </TextField>
+                <StackLayout class = "hr-light"> </StackLayout>
+            </StackLayout>
+
+            <StackLayout class = "input-field">
+                <Label class = "input" text = "Enter Password"> </Label> 
+                <TextField class = "input" hint = "Enter Password" text = "{{ password }}"> </TextField>
+                <StackLayout class = "hr-light"> </StackLayout>
+            </StackLayout>
+
+            <StackLayout class = "input-field">
+                <Label class = "input" text = "Confirm Password"> </Label> 
+                <TextField class = "input" hint = "Enter Password Again" text = "{{ password }}"> </TextField>
+                <StackLayout class = "hr-light"> </StackLayout>
+            </StackLayout>
+
+            <Button class = "btn btn-primary" text = "Register" tap = "dashboard"> </Button>
+
+            <Button text = "Already have an account" tap = "login"> </Button>
+
+        
+        </StackLayout>
+    </FlexboxLayout>
+
+</Page>
