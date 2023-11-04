@@ -14,13 +14,6 @@ export function onNavigatingTo(args) {
 }
 
 
-export function dashboard(args) {
-  const button = args.object
-  const page = button.page 
-
-  page.frame.navigate('dashboard/dashboard')
-
-}
 
 export function register(args) {
   const button = args.object

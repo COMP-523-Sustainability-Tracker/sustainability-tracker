@@ -1,0 +1,120 @@
+.page{
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    margin-left: 30;
+    margin-right: 30;
+}
+
+.header {
+    font-size: 25;
+    text-align:left;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.header2 {
+    font-size: 15;
+    text-align:left;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.input-field {
+    margin-bottom: 5;
+}
+
+.input{
+    font-size: 20; 
+    margin-top: 20;
+    margin-bottom: 0;
+    margin-left: 15;
+    color: black;
+    font-weight: 400;
+}
+
+.input-rounded {
+    margin-top: 20;
+    border-width: 1;
+    border-color: rgb(217,217,217);
+    background-color: rgb(217,217,217);
+    margin-bottom: 20px;
+    border-radius:10;
+}
+
+.register {
+    margin-left: 70;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(0, 123, 0);
+    justify-content: right;
+}
+
+
+.box-button1{
+    font-size: 14;
+    padding: 0 !important;
+    margin: 0 !important;
+    vertical-align: bottom;
+    font-weight: 800;
+    font-family: "Open Sans";
+    background-color: rgb(0, 123, 0);
+    border-width: 10;
+    border-color: rgb(0,213,0);
+    border-radius:10;
+    color: rgb(255, 255, 255);
+}
+
+.box-button2{
+    font-size: 14;
+    padding: 0 !important;
+    margin: 0 !important;
+    vertical-align: bottom;
+    font-weight: 800;
+    font-family: "Open Sans";
+    background-color: rgb(6, 63, 6);
+    border-width: 10;
+    border-color: rgb(6, 63, 6);
+    border-radius:10;
+    color: rgb(255, 255, 255);
+}
+
+.buttonbox{
+    height: 100;
+    width: 100;        
+    color: white;
+    background-color: rgb(0, 123, 0);
+    border-radius: 10;
+    justify-items: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 5;
+}
+
+.buttonbox2{
+    height: 100;
+    width: 100;        
+    color: white;
+    background-color: rgb(6, 63, 6);
+    border-radius: 10;
+    justify-items: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 5;
+}
+
+.progressbar {
+    height: 50;
+    margin: 10;
+    border-radius: 10;
+    border-color: black;
+    border-width: 1;
+}
+.progressbar-value {
+    background: rgb(0, 123, 0);
+}
+
+

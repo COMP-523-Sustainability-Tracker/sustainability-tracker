@@ -21,12 +21,12 @@
             <FlexboxLayout flexDirection ="row"> 
                 <Button text = "Forgot Password?" tap = "register"> </Button>
 
-                <Button class = "register" text = "Register" tap = "register"> </Button>
+                <Button text = "Register" tap = "register"> </Button>
 
             </FlexboxLayout> 
 
 
-            <Button text = "Login" tap = "dashboard" class = "btn btn-primary"> </Button>
+            <Button text = "Login" class = "btn btn-primary"> </Button>
         </StackLayout>
     </FlexboxLayout>
 

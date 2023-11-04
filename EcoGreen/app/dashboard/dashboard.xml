@@ -1,85 +1,55 @@
-<nsDrawer:RadSideDrawer
-  id="sideDrawer"
-  xmlns:nsDrawer="nativescript-ui-sidedrawer"
-  loaded="onLoaded"
-  class="ns-statusbar-transparent"
->
-    <nsDrawer:RadSideDrawer.drawerTransition>
-        <nsDrawer:SlideInOnTopTransition />
-    </nsDrawer:RadSideDrawer.drawerTransition>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Dashboard" icon="" />
 
-    <nsDrawer:RadSideDrawer.drawerContent>
-        <GridLayout rows="auto, *" class="nt-drawer__content">
-            <StackLayout class="nt-drawer__header">
-                <Image class="nt-drawer__header-image fas t-36" src="font://&#xf2bd;" />
-                <Label class="nt-drawer__header-brand" text="User Name" />
-                <Label class="nt-drawer__header-footnote" text="username@mail.com" />
+    <FlexboxLayout class = "page"> 
+        <StackLayout class="form">
+
+            <StackLayout class = "input-field"> 
+               <Label class = "header" text = "Welcome" > </Label> 
+               <Label class = "header2" text = "username" > </Label> 
             </StackLayout>
 
-            <ScrollView row="1">
-                <StackLayout>
-                    <GridLayout
-            columns="auto, *"
-            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Home' ? ' -selected': '') }}"
-            route="home/home-page"
-            title="Home"
-            tap="onNavigationItemTap"
-          >
-                        <Label row="0" col="0" text="&#xf015;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Home" class="p-r-10" />
-                    </GridLayout>
-
-                    <GridLayout
-            columns="auto, *"
-            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Browse' ? ' -selected': '') }}"
-            route="browse/browse-page"
-            title="Browse"
-            tap="onNavigationItemTap"
-          >
-                        <Label row="0" col="0" text="&#xf1ea;" class="nt-icon far" />
-                        <Label row="0" col="1" text="Browse" class="p-r-10" />
-                    </GridLayout>
-
-                    <GridLayout
-            columns="auto, *"
-            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Search' ? ' -selected': '') }}"
-            route="search/search-page"
-            title="Search"
-            tap="onNavigationItemTap"
-          >
-                        <Label row="0" col="0" text="&#xf002;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Search" class="p-r-10" />
-                    </GridLayout>
-
-                    <GridLayout
-            columns="auto, *"
-            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Featured' ? ' -selected': '') }}"
-            route="featured/featured-page"
-            title="Featured"
-            tap="onNavigationItemTap"
-          >
-                        <Label row="0" col="0" text="&#xf005;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Featured" class="p-r-10" />
-                    </GridLayout>
-
-                    <StackLayout class="hr" />
-
-                    <GridLayout
-            columns="auto, *"
-            class="{{ 'nt-drawer__list-item' + (selectedPage === 'Settings' ? ' -selected': '') }}"
-            route="settings/settings-page"
-            title="Settings"
-            tap="onNavigationItemTap"
-          >
-                        <Label row="0" col="0" text="&#xf013;" class="nt-icon fas" />
-                        <Label row="0" col="1" text="Settings" class="p-r-10" />
-                    </GridLayout>
+            <FlexboxLayout flexDirection = "row">
+                <StackLayout class = "buttonbox">
+                    <Button class = "box-button1" text = "Update Account?" tap = "progressBar" textWrap = "true"> </Button>
                 </StackLayout>
-            </ScrollView>
-        </GridLayout>
-    </nsDrawer:RadSideDrawer.drawerContent>
 
-    <nsDrawer:RadSideDrawer.mainContent>
-        <Frame defaultPage="home/home-page" />
-    </nsDrawer:RadSideDrawer.mainContent>
-</nsDrawer:RadSideDrawer>
+                <StackLayout class = "buttonbox2">
+                    <Button class = "box-button2" text = "Change Password" tap = "register" textWrap = "true"> </Button>
+                </StackLayout>
+
+                <StackLayout class = "buttonbox">
+                    <Button class = "box-button1" text = "Earned Badges" tap = "register" textWrap = "true"> </Button>
+                </StackLayout>
+            </FlexboxLayout>
+            
+             <StackLayout class = "input-field"> 
+               <Label class = "header" text = "Overall Progress" > </Label> 
+            </StackLayout>
+
+            <GridLayout columns="3*, *" class="progressbar" text= "{{ columns }}">
+                <StackLayout col="0" class="progressbar-value" ></StackLayout>
+            </GridLayout>
+
+             <StackLayout class = "input-field"> 
+               <Label class = "header2" text = "This is the overall progress towards have 0 carbon footprint" textWrap = "true"> </Label> 
+            </StackLayout>
+
+            <FlexboxLayout flexDirection = "row">
+                <StackLayout class = "buttonbox3">
+                    <Button text = "Total Receipts 4" tap = "progressBar" textWrap = "true"> </Button>
+                </StackLayout>
+
+                <StackLayout class = "buttonbox4">
+                    <Button text = "Total Carbon 10" tap = "register" textWrap = "true"> </Button>
+                </StackLayout>
+
+            </FlexboxLayout>
+
+            
+
+           
+        </StackLayout>
+    </FlexboxLayout>
+
+</Page>

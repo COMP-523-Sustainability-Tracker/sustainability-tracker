@@ -11,7 +11,18 @@ export function onNavigatingTo(args) {
   model.set("username", "")
   model.set("password", "")
 
+  console.log(model.get("password") + "hi")
+
   page.bindingContext = model 
+}
+
+
+export function login(args) {
+  const button = args.object
+  const page = button.page 
+
+  page.frame.navigate('login/login')
+
 }
 
 export function dashboard(args) {
@@ -19,14 +30,6 @@ export function dashboard(args) {
   const page = button.page 
 
   page.frame.navigate('dashboard/dashboard')
-
-}
-
-export function login(args) {
-  const button = args.object
-  const page = button.page 
-
-  page.frame.navigate('login/login')
 
 }
 
