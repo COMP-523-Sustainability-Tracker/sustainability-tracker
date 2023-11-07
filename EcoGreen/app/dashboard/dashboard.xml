@@ -19,7 +19,7 @@
                 </StackLayout>
 
                 <StackLayout class = "buttonbox">
-                    <Button class = "box-button1" text = "Earned Badges" tap = "register" textWrap = "true"> </Button>
+                    <Button class = "box-button1" text = "Scan Receipt" tap = "cameraAccess" textWrap = "true"> </Button>
                 </StackLayout>
             </FlexboxLayout>
             

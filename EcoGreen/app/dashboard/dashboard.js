@@ -1,4 +1,6 @@
-import { Observable } from '@nativescript/core';
+import { Observable, Image } from '@nativescript/core';
+import { requestPermissions } from '@nativescript/camera';
+import * as camera from "@nativescript/camera";
 
 // Define the ItemsComponent class
 class ItemsComponent {
@@ -58,4 +60,37 @@ export function register(args) {
 export function progressBar(){
   itemsComponent.setProgressbarWidth(35);
   console.log("is this working?")
+}
+
+export function cameraAccess(){
+  console.log("camera")
+
+  requestPermissions().then(
+    function success() {
+        // permission request accepted or already granted
+        // ... call camera.takePicture here ...
+        const options = {
+          width: 300,
+          height: 300,
+          keepAspectRatio: false,
+          saveToGallery: true
+      };
+      
+        console.log("Camera Permission Granted")
+        camera.takePicture(options)
+        .then((imageAsset) => {
+            console.log("Size: " + imageAsset.options.width + "x" + imageAsset.options.height);
+            console.log("keepAspectRatio: " + imageAsset.options.keepAspectRatio);
+            console.log("Photo saved in Photos/Gallery for Android or in Camera Roll for iOS");
+        }).catch((err) => {
+            console.log("Error -> " + err.message);
+        });
+
+    },
+    function failure() {
+        // permission request rejected
+        // ... tell the user ...
+        console.log("Camera Permission Denied")
+    }
+);
 }
