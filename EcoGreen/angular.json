@@ -1,0 +1,15 @@
+{
+"version": 1,
+"cli": {
+    "defaultCollection": "@nativescript/schematics",
+    "analytics": false
+},
+"projects": {
+    "EcoGreen": {
+        "root": "",
+        "sourceRoot": "src",
+        "projectType": "application",
+        "prefix": "ns"
+    }
+},
+}
